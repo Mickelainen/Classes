@@ -96,7 +96,7 @@ namespace ConsoleApp4
             Console.WriteLine("Lastname: {0}", _lastName);
             Console.WriteLine("Age: {0}", _age);
             Console.WriteLine("City: {0}", _city);
-            Console.WriteLine("Is Parent: {0}", _isParent);
+            Console.WriteLine("Is Parent: {0}", _isParent ? "Yes" : "No");
         }
 
     }

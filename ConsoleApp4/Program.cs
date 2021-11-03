@@ -1,4 +1,5 @@
 ﻿using System;
+using ConsoleApp4.Models;
 
 namespace ConsoleApp4
 {
@@ -77,12 +78,22 @@ namespace ConsoleApp4
 
             human.PrintInfo();
             human1.PrintInfo();
+            
+
+            Quadrant quadrant = new Quadrant(8, 8);
+
+            Human human = new Human();
+   
+            quadrant.PrintTriangle();
             */
 
-            Quadrant quadrant = new Quadrant(10, 10);
+            Dog dog = new Dog("Lufsen", 4, "Dog", true, "Tax", "black");
 
-            quadrant.PrintQuadrant(5, 5);
+            Lasagne lasagne = new Lasagne("Mickes lasagne", new string[] { "ost", "köttfärs", "lök" });
 
+            
+            Console.WriteLine(lasagne.MinutesFromStart(2, 30));
         }
     }
 }
+ 
