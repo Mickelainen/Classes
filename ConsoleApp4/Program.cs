@@ -91,8 +91,8 @@ namespace ConsoleApp4
 
             Lasagne lasagne = new Lasagne("Mickes lasagne", new string[] { "ost", "köttfärs", "lök" });
 
+            Console.WriteLine("test");
             
-            Console.WriteLine(lasagne.MinutesFromStart(2, 30));
         }
     }
 }

@@ -9,8 +9,13 @@ namespace ConsoleApp4
     class Car
     {
         //Fields -Egenskaper
+        private string _regNr;
         private string _brand;
         private string _color;
+        private string _fuelType;
+        private double _fuelConsumptionPerMile;
+        private double _maxFuel;
+        private int _numberOfDoors;
         private int _year;
 
         //Property - Get & Set
@@ -75,12 +80,23 @@ namespace ConsoleApp4
 
         } 
 
-        public Car(string b, string c, int y)
+        public Car(string b, string c, int y, string d)
         {
             this._brand = b;
             this._color = c;
             this._year = y;
+            this._regNr = d;
+        }
 
+        public Car(string a, string b, string c, string d, double e, double f, int x, int y)
+        {
+            this._regNr = a;
+            this._brand = b;
+            this._color = c;
+            this._fuelType = d;
+            this._fuelConsumptionPerMile = f;
+            this._numberOfDoors = x;
+            this._year = y;
         }
         
     }
